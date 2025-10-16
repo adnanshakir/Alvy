@@ -1,8 +1,5 @@
-Minimal Responsive Website
-
+<h1>Minimal Responsive Website</h1>
 A simple, minimal design responsive website built with modern frontend practices. This project focuses on clean layout, mobile-first design, and performance-friendly code.
-
-✨ Features
 
 <ul>
   <h3>✨ Features</h3>
