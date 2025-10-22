@@ -29,18 +29,27 @@ body {
   background: #121212;
   color: whitesmoke;
 }
-.container{
-    max-width: 1900px;
+.container {
+  max-width: 1900px;
 }
 main {
   width: 100%;
   @include flex-col(0rem);
   align-items: center;
 
+  .mono {
+    font-family: monospace;
+  }
+  .chill {
+    font-family: Chillax;
+  }
+  .san {
+    font-family: Santosi;
+  }
+
   nav {
     height: 60px;
     width: 100%;
-    font-family: monospace;
 
     .navbar {
       display: flex;
@@ -73,7 +82,7 @@ main {
     }
   }
 
-  section {
+  section.view1 {
     width: 100%;
     @include flex-col(1rem);
     padding: 1rem;
@@ -94,7 +103,6 @@ main {
       border-radius: 12px;
 
       p {
-        font-family: Noo;
         font-size: 1rem;
         padding: 0px 3px;
       }
@@ -103,7 +111,6 @@ main {
         @include flex-col(0.8rem);
 
         h1 {
-          font-family: Chillax;
           text-transform: uppercase;
           font-weight: 200;
           font-size: 2.6rem;
@@ -111,7 +118,6 @@ main {
         }
 
         p {
-          font-family: Santosi;
           font-weight: 200;
           opacity: 0.6;
           font-size: 1.3rem;
@@ -119,13 +125,276 @@ main {
         }
 
         button {
-          font-family: Santosi;
           width: fit-content;
           font-weight: 600;
           border: none;
           outline: none;
           padding: 0.8rem 1rem;
           border-radius: 1rem;
+        }
+      }
+    }
+  }
+
+  section.view2 {
+    width: 100%;
+    @include flex-col(2.5rem);
+    padding: 1rem;
+
+    .top,
+    .btm {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+
+      .element {
+        @include flex-col(0.5rem);
+        text-align: center;
+        align-items: center;
+
+        small {
+          opacity: 0.6;
+          font-size: 1rem;
+        }
+        h2 {
+          font-size: 3rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  section.view3 {
+    width: 100%;
+    padding: 1rem;
+    @include flex-col(1rem);
+
+    .top {
+      width: 100%;
+      text-transform: uppercase;
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
+    }
+    .btm {
+      background-color: #1e1e1e;
+      @include flex-col(3rem);
+      padding: 2rem 2rem;
+      border-radius: 12px;
+
+      p {
+        font-size: 1rem;
+        padding: 0px 3px;
+      }
+
+      .text {
+        @include flex-col(0.8rem);
+
+        h1 {
+          font-weight: 200;
+          font-size: 2.2rem;
+          line-height: 2.8rem;
+        }
+
+        p {
+          font-weight: 200;
+          opacity: 0.6;
+          font-size: 1rem;
+          line-height: 1.6rem;
+        }
+      }
+    }
+  }
+
+  section.view4 {
+    width: 100%;
+    @include flex-col(1rem);
+    padding: 1rem;
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
+    }
+    .btm > p {
+      text-transform: uppercase;
+    }
+    .btm {
+      background-color: #1e1e1e;
+      @include flex-col(3rem);
+      padding: 2rem 2rem;
+      border-radius: 12px;
+
+      p {
+        font-size: 1rem;
+        padding: 0px 3px;
+      }
+
+      .text {
+        @include flex-col(0.8rem);
+
+        h1 {
+          text-transform: uppercase;
+          font-weight: 200;
+          font-size: 2rem;
+          line-height: 2.2rem;
+        }
+
+        p {
+          font-weight: 200;
+          opacity: 0.6;
+          font-size: 1.1rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+  section.view5 {
+    @include flex-col(0rem);
+    padding: 1rem;
+    gap: 2rem;
+    width: 100%;
+
+    .head {
+      text-transform: uppercase;
+      padding: 0rem 2rem;
+      align-items: center;
+      display: flex;
+
+      .chill {
+        font-size: 2rem;
+      }
+    }
+    .card {
+      width: 100%;
+      border-radius: 12px;
+      background-size: cover;
+      aspect-ratio: 1/1;
+      @include flex-col(0rem);
+      justify-content: space-between;
+      align-items: center;
+
+      .top {
+        width: 100%;
+        display: flex;
+        gap: 1.4rem;
+        padding: 1rem;
+        justify-content: end;
+
+        .icon {
+          padding: 0.8rem;
+          font-size: 1rem;
+          border-radius: 50%;
+          border: white 1px solid;
+          backdrop-filter: blur(20px);
+        }
+      }
+      .btm {
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding: 0.8rem;
+
+        .text {
+          border: 1px solid rgba(255, 255, 255, 0.216);
+          padding: 1rem;
+          display: flex;
+          justify-content: space-between;
+          border-radius: 6px;
+          backdrop-filter: blur(18px);
+        }
+      }
+    }
+    .one {
+      background-image: url(./Assets/wmn.webp);
+    }
+    .two {
+      background-image: url(./Assets/wmn2.webp);
+    }
+    .three {
+      background-image: url(./Assets/mn.webp);
+    }
+  }
+  section.view6 {
+    width: 100%;
+    @include flex-col(1rem);
+    padding: 1rem;
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
+    }
+    .btm {
+      @include flex-col(3rem);
+      width: 100%;
+      background-color: #1e1e1e;
+      text-transform: uppercase;
+      padding: 2rem 2rem;
+      border-radius: 12px;
+
+      .text {
+        .mono {
+          font-size: 1.2rem;
+          opacity: 0.4;
+        }
+        .chill {
+          font-size: 2rem;
+          font-weight: 200;
+        }
+      }
+
+      button {
+        width: fit-content;
+        font-weight: 200;
+        border: none;
+        outline: none;
+        padding: 0.8rem 1rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+  section.contact {
+    padding: 1rem;
+    text-transform: uppercase;
+    .text {
+      border-radius: 12px;
+      padding: 2rem 2rem;
+      background-color: #cebd63;
+      color: #1a1a1a;
+
+      .top {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+      }
+      .btm {
+        font-size: 2rem;
+
+        .chill {
+          line-height: 4rem;
+          font-weight: 100;
+        }
+
+        button {
+          margin-top: 1rem;
+          text-transform: uppercase;
+          color: whitesmoke;
+          background-color: #121212;
+          font-size: 1rem;
+          font-weight: 200;
+          width: 100%;
+          border: none;
+          outline: none;
+          padding: 0.8rem 1rem;
+          border-radius: 8px;
         }
       }
     }
@@ -142,8 +411,9 @@ main {
 
 @media (min-width: 900px) {
   main {
-    section {
+    section.view1 {
       flex-direction: row;
+      padding: 1rem;
 
       .top,
       .btm {
@@ -165,6 +435,140 @@ main {
           p {
             font-size: 1.3rem;
             width: 80%;
+          }
+        }
+      }
+    }
+    section.view2 {
+      flex-direction: row;
+      padding: 2rem 1rem;
+      justify-content: space-evenly;
+    }
+    section.view3 {
+      flex-direction: row-reverse;
+      padding: 1rem;
+
+      .top,
+      .btm {
+        width: 50%;
+      }
+
+      .btm {
+        justify-content: space-between;
+        padding: 3rem;
+
+        .mono {
+          text-transform: uppercase;
+        }
+
+        .text {
+          gap: 1.5rem;
+
+          h1 {
+            font-size: 3rem;
+            line-height: 4.5rem;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-size: 1rem;
+            width: 80%;
+          }
+        }
+        .paras {
+          display: flex;
+          justify-content: space-between;
+          gap: 2rem;
+        }
+      }
+    }
+    section.view4 {
+      flex-direction: row;
+      padding: 0.5rem 1rem;
+
+      .top,
+      .btm {
+        width: 50%;
+      }
+
+      .btm {
+        justify-content: space-between;
+        padding: 3rem;
+
+        .text {
+          gap: 1.5rem;
+
+          h1 {
+            font-size: 3rem;
+            line-height: 4.5rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+            width: 80%;
+          }
+        }
+      }
+    }
+    section.view5 {
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .con {
+        display: flex;
+        flex-direction: row;
+        gap: 1.8rem;
+      }
+    }
+    section.view6 {
+      flex-direction: row;
+      padding: 1rem;
+
+      .top,
+      .btm {
+        width: 50%;
+      }
+
+      .btm {
+        @include flex-col(3rem);
+        padding: 3rem 3rem;
+        justify-content: space-between;
+
+        .text {
+          .chill {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+    section.contact {
+      .text {
+        padding: 3rem 3rem;
+
+        .btm {
+          display: flex;
+          justify-content: space-between;
+          align-items: stretch;
+          gap: 1rem;
+          font-size: 3.4rem;
+
+          .chill {
+            line-height: 5rem;
+            font-weight: 100;
+            width: 70%;
+          }
+
+          .con {
+            display: flex;
+            align-items: flex-end;
+            button {
+              display: inline-block;
+              width: auto;
+              padding: 0.8rem 1.2rem;
+              font-size: 1rem;
+              flex-shrink: 0;
+              align-items: end;
+            }
           }
         }
       }

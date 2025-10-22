@@ -35,10 +35,18 @@ main {
   gap: 0rem;
   align-items: center;
 }
+main .mono {
+  font-family: monospace;
+}
+main .chill {
+  font-family: Chillax;
+}
+main .san {
+  font-family: Santosi;
+}
 main nav {
   height: 60px;
   width: 100%;
-  font-family: monospace;
 }
 main nav .navbar {
   display: flex;
@@ -66,21 +74,21 @@ main nav .navbar .list a {
   padding: 1rem 1.8rem;
   border-radius: 8px;
 }
-main section {
+main section.view1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
 }
-main section .top {
+main section.view1 .top {
   width: 100%;
 }
-main section .top img {
+main section.view1 .top img {
   width: 100%;
   border-radius: 12px;
 }
-main section .btm {
+main section.view1 .btm {
   background-color: #1e1e1e;
   display: flex;
   flex-direction: column;
@@ -88,32 +96,28 @@ main section .btm {
   padding: 2rem 2rem;
   border-radius: 12px;
 }
-main section .btm p {
-  font-family: Noo;
+main section.view1 .btm p {
   font-size: 1rem;
   padding: 0px 3px;
 }
-main section .btm .text {
+main section.view1 .btm .text {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
-main section .btm .text h1 {
-  font-family: Chillax;
+main section.view1 .btm .text h1 {
   text-transform: uppercase;
   font-weight: 200;
   font-size: 2.6rem;
   line-height: 2.8rem;
 }
-main section .btm .text p {
-  font-family: Santosi;
+main section.view1 .btm .text p {
   font-weight: 200;
   opacity: 0.6;
   font-size: 1.3rem;
   line-height: 2rem;
 }
-main section .btm .text button {
-  font-family: Santosi;
+main section.view1 .btm .text button {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 600;
@@ -122,6 +126,268 @@ main section .btm .text button {
   padding: 0.8rem 1rem;
   border-radius: 1rem;
 }
+main section.view2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1rem;
+}
+main section.view2 .top,
+main section.view2 .btm {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+main section.view2 .top .element,
+main section.view2 .btm .element {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+main section.view2 .top .element small,
+main section.view2 .btm .element small {
+  opacity: 0.6;
+  font-size: 1rem;
+}
+main section.view2 .top .element h2,
+main section.view2 .btm .element h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+main section.view3 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view3 .top {
+  width: 100%;
+  text-transform: uppercase;
+}
+main section.view3 .top img {
+  width: 100%;
+  border-radius: 12px;
+}
+main section.view3 .btm {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 2rem;
+  border-radius: 12px;
+}
+main section.view3 .btm p {
+  font-size: 1rem;
+  padding: 0px 3px;
+}
+main section.view3 .btm .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+main section.view3 .btm .text h1 {
+  font-weight: 200;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+main section.view3 .btm .text p {
+  font-weight: 200;
+  opacity: 0.6;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+main section.view4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view4 .top {
+  width: 100%;
+}
+main section.view4 .top img {
+  width: 100%;
+  border-radius: 12px;
+}
+main section.view4 .btm > p {
+  text-transform: uppercase;
+}
+main section.view4 .btm {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 2rem;
+  border-radius: 12px;
+}
+main section.view4 .btm p {
+  font-size: 1rem;
+  padding: 0px 3px;
+}
+main section.view4 .btm .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+main section.view4 .btm .text h1 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+main section.view4 .btm .text p {
+  font-weight: 200;
+  opacity: 0.6;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+main section.view5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  padding: 1rem;
+  gap: 2rem;
+  width: 100%;
+}
+main section.view5 .head {
+  text-transform: uppercase;
+  padding: 0rem 2rem;
+  align-items: center;
+  display: flex;
+}
+main section.view5 .head .chill {
+  font-size: 2rem;
+}
+main section.view5 .card {
+  width: 100%;
+  border-radius: 12px;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  align-items: center;
+}
+main section.view5 .card .top {
+  width: 100%;
+  display: flex;
+  gap: 1.4rem;
+  padding: 1rem;
+  justify-content: end;
+}
+main section.view5 .card .top .icon {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  border: white 1px solid;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+main section.view5 .card .btm {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+}
+main section.view5 .card .btm .text {
+  border: 1px solid rgba(255, 255, 255, 0.216);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px);
+}
+main section.view5 .one {
+  background-image: url(./Assets/wmn.webp);
+}
+main section.view5 .two {
+  background-image: url(./Assets/wmn2.webp);
+}
+main section.view5 .three {
+  background-image: url(./Assets/mn.webp);
+}
+main section.view6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view6 .top {
+  width: 100%;
+}
+main section.view6 .top img {
+  width: 100%;
+  border-radius: 12px;
+}
+main section.view6 .btm {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  background-color: #1e1e1e;
+  text-transform: uppercase;
+  padding: 2rem 2rem;
+  border-radius: 12px;
+}
+main section.view6 .btm .text .mono {
+  font-size: 1.2rem;
+  opacity: 0.4;
+}
+main section.view6 .btm .text .chill {
+  font-size: 2rem;
+  font-weight: 200;
+}
+main section.view6 .btm button {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 200;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+}
+main section.contact {
+  padding: 1rem;
+  text-transform: uppercase;
+}
+main section.contact .text {
+  border-radius: 12px;
+  padding: 2rem 2rem;
+  background-color: #cebd63;
+  color: #1a1a1a;
+}
+main section.contact .text .top {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+main section.contact .text .btm {
+  font-size: 2rem;
+}
+main section.contact .text .btm .chill {
+  line-height: 4rem;
+  font-weight: 100;
+}
+main section.contact .text .btm button {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+  background-color: #121212;
+  font-size: 1rem;
+  font-weight: 200;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+}
 
 @media (max-width: 900px) {
   main nav {
@@ -129,26 +395,141 @@ main section .btm .text button {
   }
 }
 @media (min-width: 900px) {
-  main section {
+  main section.view1 {
     flex-direction: row;
+    padding: 1rem;
   }
-  main section .top,
-  main section .btm {
+  main section.view1 .top,
+  main section.view1 .btm {
     width: 50%;
   }
-  main section .btm {
+  main section.view1 .btm {
     justify-content: space-between;
     padding: 3rem;
   }
-  main section .btm .text {
+  main section.view1 .btm .text {
     gap: 1.5rem;
   }
-  main section .btm .text h1 {
+  main section.view1 .btm .text h1 {
     font-size: 4rem;
     line-height: 4.5rem;
   }
-  main section .btm .text p {
+  main section.view1 .btm .text p {
     font-size: 1.3rem;
     width: 80%;
+  }
+  main section.view2 {
+    flex-direction: row;
+    padding: 2rem 1rem;
+    justify-content: space-evenly;
+  }
+  main section.view3 {
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+  main section.view3 .top,
+  main section.view3 .btm {
+    width: 50%;
+  }
+  main section.view3 .btm {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section.view3 .btm .mono {
+    text-transform: uppercase;
+  }
+  main section.view3 .btm .text {
+    gap: 1.5rem;
+  }
+  main section.view3 .btm .text h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+  }
+  main section.view3 .btm .text p {
+    font-size: 1rem;
+    width: 80%;
+  }
+  main section.view3 .btm .paras {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  main section.view4 {
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+  }
+  main section.view4 .top,
+  main section.view4 .btm {
+    width: 50%;
+  }
+  main section.view4 .btm {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section.view4 .btm .text {
+    gap: 1.5rem;
+  }
+  main section.view4 .btm .text h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+  main section.view4 .btm .text p {
+    font-size: 1.3rem;
+    width: 80%;
+  }
+  main section.view5 {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  main section.view5 .con {
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+  }
+  main section.view6 {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  main section.view6 .top,
+  main section.view6 .btm {
+    width: 50%;
+  }
+  main section.view6 .btm {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 3rem;
+    justify-content: space-between;
+  }
+  main section.view6 .btm .text .chill {
+    font-size: 3rem;
+  }
+  main section.contact .text {
+    padding: 3rem 3rem;
+  }
+  main section.contact .text .btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+    font-size: 3.4rem;
+  }
+  main section.contact .text .btm .chill {
+    line-height: 5rem;
+    font-weight: 100;
+    width: 70%;
+  }
+  main section.contact .text .btm .con {
+    display: flex;
+    align-items: flex-end;
+  }
+  main section.contact .text .btm .con button {
+    display: inline-block;
+    width: auto;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    flex-shrink: 0;
+    align-items: end;
   }
 }/*# sourceMappingURL=style.css.map */
