@@ -1,8 +1,4 @@
 @font-face {
-  font-family: Noo;
-  src: url(./Assets/mono.woff2);
-}
-@font-face {
   font-family: Chillax;
   src: url(./Assets/Chillax.woff);
 }
@@ -283,7 +279,7 @@ main section.view5 .card .top {
 }
 main section.view5 .card .top .icon {
   padding: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: border-color 0.3s ease;
@@ -315,9 +311,11 @@ main section.view5 .card .btm .text:hover {
 }
 main section.view5 .one {
   background-image: url(./Assets/wmn.webp);
+  margin-bottom: 1rem;
 }
 main section.view5 .two {
   background-image: url(./Assets/wmn2.webp);
+  margin-bottom: 1rem;
 }
 main section.view5 .three {
   background-image: url(./Assets/mn.webp);
@@ -398,11 +396,80 @@ main section.contact .text .btm button {
   border-radius: 8px;
 }
 main section.footer {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   padding: 1rem;
+}
+main section.footer .top {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+}
+main section.footer .top img {
+  width: 6rem;
+}
+main section.footer .top .icons {
+  padding-top: 6rem;
+  display: flex;
+  gap: 1rem;
+}
+main section.footer .top .icons .icon {
+  padding: 0.8rem;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: border-color 0.3s ease;
+}
+main section.footer .top .icons .icon:hover {
+  border-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+main section.footer .btm {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+main section.footer .btm ul {
+  list-style: none;
+}
+main section.footer .btm ul header {
+  font-size: 2.8rem;
+}
+main section.footer .btm ul li {
+  list-style: none;
+}
+main section.footer .btm ul .mono {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+}
+main section.footer .btm ul .mono li {
+  opacity: 0.5;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: opacity 0.3s ease;
+}
+main section.footer .btm ul .mono li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+main section.footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-size: 0.8rem;
-  opacity: 0.6;
+  font-size: 1rem;
+  opacity: 0.5;
 }
 
 @media (max-width: 900px) {
@@ -547,5 +614,10 @@ main section.footer {
     font-size: 1rem;
     flex-shrink: 0;
     align-items: end;
+  }
+  main section.footer .btm {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,4 @@
 @font-face {
-  font-family: Noo;
-  src: url(./Assets/mono.woff2);
-}
-@font-face {
   font-family: Chillax;
   src: url(./Assets/Chillax.woff);
 }
@@ -135,7 +131,6 @@ main {
       }
     }
   }
-
   section.view2 {
     width: 100%;
     @include flex-col(2.5rem);
@@ -163,7 +158,6 @@ main {
       }
     }
   }
-
   section.view3 {
     width: 100%;
     padding: 1rem;
@@ -207,7 +201,6 @@ main {
       }
     }
   }
-
   section.view4 {
     width: 100%;
     @include flex-col(1rem);
@@ -288,7 +281,7 @@ main {
 
         .icon {
           padding: 0.8rem;
-          font-size: 1rem;
+          font-size: 1.4rem;
           border-radius: 50%;
           border: 1px solid rgba(255, 255, 255, 0.3);
           transition: border-color 0.3s ease;
@@ -323,9 +316,11 @@ main {
     }
     .one {
       background-image: url(./Assets/wmn.webp);
+      margin-bottom: 1rem;
     }
     .two {
       background-image: url(./Assets/wmn2.webp);
+      margin-bottom: 1rem;
     }
     .three {
       background-image: url(./Assets/mn.webp);
@@ -408,6 +403,85 @@ main {
           border-radius: 8px;
         }
       }
+    }
+  }
+  section.footer {
+    @include flex-col(2rem);
+    padding: 1rem;
+
+    .top {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      gap: 2rem;
+      width: 100%;
+      padding: 2rem;
+
+      img {
+        width: 6rem;
+      }
+
+      .icons {
+        padding-top: 6rem;
+        display: flex;
+        gap: 1rem;
+
+        .icon {
+          padding: 0.8rem;
+          font-size: 1.4rem;
+          border-radius: 50%;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          transition: border-color 0.3s ease;
+
+          &:hover {
+            border-color: rgba(255, 255, 255, 1);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .btm {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      padding: 2rem;
+      @include flex-col(3rem);
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      ul {
+        list-style: none;
+
+        header {
+          font-size: 2.8rem;
+        }
+        li {
+          list-style: none;
+        }
+        .mono {
+          display: flex;
+          flex-direction: column;
+          gap: 0.8rem;
+          font-size: 1.2rem;
+
+          li {
+            opacity: 0.5;
+            width: fit-content;
+            transition: opacity 0.3s ease;
+
+            &:hover {
+              opacity: 1;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .bottom{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1rem;
+      opacity: 0.5;
     }
   }
 }
@@ -583,6 +657,13 @@ main {
             }
           }
         }
+      }
+    }
+    section.footer {
+      .btm {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
       }
     }
   }
