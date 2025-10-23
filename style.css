@@ -285,9 +285,14 @@ main section.view5 .card .top .icon {
   padding: 0.8rem;
   font-size: 1rem;
   border-radius: 50%;
-  border: white 1px solid;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: border-color 0.3s ease;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
+}
+main section.view5 .card .top .icon:hover {
+  border-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 main section.view5 .card .btm {
   width: 100%;
@@ -301,8 +306,12 @@ main section.view5 .card .btm .text {
   display: flex;
   justify-content: space-between;
   border-radius: 6px;
+  transition: border-color 0.3s ease;
   -webkit-backdrop-filter: blur(18px);
           backdrop-filter: blur(18px);
+}
+main section.view5 .card .btm .text:hover {
+  border-color: rgba(255, 255, 255, 0.629);
 }
 main section.view5 .one {
   background-image: url(./Assets/wmn.webp);
@@ -387,6 +396,13 @@ main section.contact .text .btm button {
   outline: none;
   padding: 0.8rem 1rem;
   border-radius: 8px;
+}
+main section.footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
 
 @media (max-width: 900px) {

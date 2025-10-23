@@ -290,8 +290,14 @@ main {
           padding: 0.8rem;
           font-size: 1rem;
           border-radius: 50%;
-          border: white 1px solid;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          transition: border-color 0.3s ease;
           backdrop-filter: blur(20px);
+
+          &:hover {
+            border-color: rgba(255, 255, 255, 1);
+            cursor: pointer;
+          }
         }
       }
       .btm {
@@ -306,7 +312,12 @@ main {
           display: flex;
           justify-content: space-between;
           border-radius: 6px;
+          transition: border-color 0.3s ease;
           backdrop-filter: blur(18px);
+
+          &:hover {
+            border-color: rgba(255, 255, 255, 0.629);
+          }
         }
       }
     }
@@ -561,6 +572,7 @@ main {
           .con {
             display: flex;
             align-items: flex-end;
+
             button {
               display: inline-block;
               width: auto;
